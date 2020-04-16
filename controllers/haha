@@ -1,0 +1,67 @@
+/ router.post('/', validator.postCreateUpdate, async (req, res) => {
+//   // const errors = validationResult(req);
+//   // if (!errors.isEmpty()) {
+//   //   res.status(400).json({ errors: errors.array() });
+//   // }
+
+//   const post = new Posts({
+//     title: req.body.title,
+//     description: req.body.description
+//   });
+
+//   try {
+//     const postSaved = await post.save();
+//     res.status(200).json(postSaved);
+//   } catch (err) {
+//     res.status(400).json({ message: err })
+//   }
+// });
+
+// // read all posts
+// router.get('/', async (req, res) => {
+//   try {
+//     const posts = await Posts.find();
+//     res.status(200).json(posts);
+//   } catch (err) {
+//     res.status(200).json({ message: err })
+//   }
+// });
+
+// // read specific post
+// router.get('/:id', async (req, res) => {
+//     try { 
+//       const post = await Posts.findById({ _id: req.params.id });
+//       res.status(200).json(post);
+//     } catch (err) {
+//       res.status(400).json({ message: err });
+//     }
+// });
+
+// // update specific post
+// router.put('/:id', async (req, res) => {
+//   const errors = validationResult(req);
+//   if (!errors.isEmpty()) {
+//     res.status(400).json({ errors: errors.array() });
+//   }
+
+//   try {
+//     const updatedPost = await Posts.update({ _id: req.params.id }, {
+//         title: req.body.title, 
+//         description: req.body.description
+//     });
+//     res.status(200).json(updatedPost);
+//   } catch (err) {
+//     res.status(400).json({ message: err });
+//   }
+// });
+
+// // delete specific posts
+// router.delete('/:id', async (req, res) => {
+//   try {
+//     const removedPost = await Posts.remove({ _id: req.params.id });
+//     res.status(200).json(removedPost);
+//   } catch (err) {
+//     res.status(400).json({ message: err });
+//   }
+// }); 
+
